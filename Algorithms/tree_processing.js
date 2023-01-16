@@ -35,11 +35,12 @@ function flatten(tree) {
 //////////////
 
 function map_tree(f, tree) {
-	return map(subtree => {
+	return map(subtree => 
 					   !is_list(subtree)
 					   ? f(subtree)
-					   : map_tree(f, subtree)
-					  }, tree);
+					   : map_tree(f, subtree), 
+			   tree
+			  );
 }
 
 
@@ -131,3 +132,5 @@ function insert(tree, item) {
 		}
 	}
 }
+
+

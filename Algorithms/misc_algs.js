@@ -5,7 +5,7 @@
 
 
 /////////////////////////////////
-// Greatest Common Demoninator //
+// Greatest Common Denominator //
 /////////////////////////////////
 
 function gcd(a, b) {
